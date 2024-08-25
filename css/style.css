@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+body main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25%;
+  margin-bottom: 20%;
+}
+body main .container .card {
+  width: 300px;
+  height: 450px;
+  padding: 30px;
+}
+body main .container .card .text-container {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body main .container .card h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+  margin: 0;
+}
+body main .container .card p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2;
+  margin: 0 0 40px 0;
+}
+body main .container .card button {
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 25px;
+  border: none;
+  height: 50px;
+  width: 150px;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  margin-top: 15px;
+  transition: all 0.3s linear;
+}
+body main .container .card button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0, 0%, 95%) !important;
+}
+body main .container #card1 {
+  border-radius: 8px 8px 0 0;
+  background-color: hsl(31, 77%, 52%);
+}
+body main .container #card1 button {
+  color: hsl(31, 77%, 52%);
+}
+body main .container #card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+body main .container #card2 button {
+  color: hsl(184, 100%, 22%);
+}
+body main .container #card3 {
+  border-radius: 0 0 8px 8px;
+  background-color: hsl(179, 100%, 13%);
+}
+body main .container #card3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1000px) {
+  body main .container {
+    height: 98vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  body main .container #card1 {
+    border-radius: 8px 0 0 8px;
+  }
+  body main .container #card3 {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
